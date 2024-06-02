@@ -1,0 +1,14 @@
+---
+:cachedir: '/var/cache/r10k'
+
+# Specify the sources where r10k should fetch environments from
+:sources:
+  # This is the name of the environment source, you can have multiple sources
+  cloud_puppet:
+    # Specify the type of the source. For Git, it's :git.
+    :type: :git
+
+    # Specify the remote Git repository URL
+    :remote: 'git@github.com:0xcross24/cloud_puppet.git'
+    :basedir: '/etc/puppetlabs/code/environments'
+
